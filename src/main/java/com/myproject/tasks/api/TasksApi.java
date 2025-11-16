@@ -47,7 +47,7 @@ public class TasksApi {
         return TaskFacade.getAll();
     }
 
-    @DeleteMapping("/taskId")
+    @DeleteMapping("/{taskId}")
     @ResponseBody
     public String delete(@PathVariable("taskId") Long taskId){
 
